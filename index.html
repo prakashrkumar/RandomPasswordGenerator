@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MiniProject-1</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<link rel="icon" type="image/x-icon" href="IMG_9954 (1) - Copy.jpg" >
+<body>
+  <div class="container">
+   <h1>PASSWORD GENETOR</h1>
+   <div class="display-container">
+      <input readonly placeholder="password" class="display" data-passwordDisplay>
+      <button class="copyBtn" data-copy>
+         <span class="tooltip" data-copyMsg></span>
+         <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+      </button>
+   </div>
+<div class="input-container">
+   <!--input lengthsection-->
+   <div class="length-container">
+      <p >Password Length</p>
+      <p data-lengthNumber>0</p>
+
+   </div>
+   <!--slider-->
+   <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider >
+<!--checkboxes-->
+<div class="check">
+   <input type="checkbox" id="uppercase">
+   <label for="uppercase">Include Upper Letter</label>
+</div>
+<div class="check">
+   <input type="checkbox" id="lowercase">
+   <label for="lowerercase">Include Lower Letter</label>
+</div>
+<div class="check">
+   <input type="checkbox" id="numbers">
+   <label for="numbers">Include Numbers </label>
+</div>
+<div class="check">
+   <input type="checkbox" id="symbols">
+   <label for="Symbols">Include Symbols </label>
+</div>
+<!--strength section-->
+<div class="strength-container">
+   <p>Strength</p>
+   <div class="indicator" data-indicator></div>
+
+</div>
+<!--generate password-->
+<button class="generateButton">GENRATE PASSWORD</button>
+
+</div>
+
+
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
